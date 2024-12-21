@@ -16,7 +16,7 @@ unit_tests_pfl/
 В директории `workflows` нам надо создать файл с расширением .yml. У нас это будет `say_hi_check.yml`.
 
 ### Заполняем файл
-Начнём с имени и разрешений:
+Начнём с имени и триггеров:
 ```yaml
 name: CI
 
@@ -73,3 +73,5 @@ steps:
   - name: Run tests
     run: python -m pytest tests
 ```
+
+*Кредиты: [Руководство Гитхаба](https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-python)*
